@@ -15,22 +15,22 @@ pkg-url = "{ repo }/releases/download/v{ version }/lazyjj-v{ version }-{ target 
 
 
 [dependencies]
-ansi-to-tui = "4.0.1"
+ansi-to-tui = { git = "https://github.com/orhun/ansi-to-tui.git", branch = "chore/bump_ratatui" }
 anyhow = "1.0.86"
 chrono = "0.4.38"
-clap = { version = "4.5.7", features = ["derive"] }
-crossterm = "0.27.0"
+clap = { version = "4.5.15", features = ["derive"] }
+crossterm = "0.28.1"
 insta = { version = "1.39.0", features = ["filters"] }
 itertools = "0.13.0"
-lazy_static = "1.4.0"
-ratatui = { version = "0.26.3", features = [
+lazy_static = "1.5.0"
+ratatui = { version = "0.28.0", features = [
   "serde",
   "unstable-rendered-line-info",
 ] }
-regex = "1.10.5"
-serde = { version = "1.0.203", features = ["derive"] }
+regex = "1.10.6"
+serde = { version = "1.0.207", features = ["derive"] }
 tempdir = "0.3.7"
-thiserror = "1.0.61"
-toml = "0.8.14"
-tui-textarea = "0.4.0"
-tui_confirm_dialog = "0.2.1"
+thiserror = "1.0.63"
+toml = "0.8.19"
+tui-textarea = "0.6.1"
+tui_confirm_dialog = { git = "https://github.com/Cretezy/tui-confirm-dialog.git", branch = "push-sxkvktnopuwn" }
